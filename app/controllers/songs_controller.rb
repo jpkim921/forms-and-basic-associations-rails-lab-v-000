@@ -12,6 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    binding.pry
     @song = Song.create(song_params)
     redirect_to songs_path
   end
